@@ -11,15 +11,13 @@ scored.against <- c(17, 9, 33, 18)
 seahawks.scores <- data.frame(first.four.scores, scored.against)
 
 # Create a new column "diff" that is the difference in points
-diff <- (first.four.scores - scored.against)
-seahawks.scores <- data.frame(first.four.scores, scored.against, diff)
+seahawks.scores$diff <- (first.four.scores - scored.against)
 
 # Create a new column "won" which is TRUE if the Seahawks wom
-won <- (first.four.scores > scored.against)
-seahawks.scores <- data.frame(first.four.scores, scored.against, diff, won)
+seahawks.scores$won <- (first.four.scores > scored.against)
 
 # Create a vector of the opponents
 opponents <- c("Packers", "49ers", "Titans", "Colts")
 
 # Assign your dataframe rownames of their opponents
-rownames(opponents)
+rownames(seahawks.scores) <- opponents
