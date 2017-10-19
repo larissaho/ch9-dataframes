@@ -29,7 +29,7 @@ largest.grant <- max(spending)
 smallest.grant <- min(spending)
 
 # Which organization received the largest grant?
-org[spending == largest.grant]
+printorg[spending == largest.grant]
 
 # Which organization received the smallest grant?
 org[spending == smallest.grant]

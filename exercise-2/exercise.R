@@ -5,7 +5,7 @@ employees <- paste("Employee", 1:100)
 salaries.2014 <- runif(100, 40000, 50000)
 
 # Create a vector of 2015 salaries that are typically higher than the 2014 salaires (use runif again)
-
+salaries.2015 <- salaries.2014 + runif(100, -5000, 10000)
 
 # Create a data.frame 'salaries' by combining the vectors you just made
 
